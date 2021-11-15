@@ -1,0 +1,21 @@
+@import "scss/abstract/reset";
+@import "scss/abstract/mixin";
+@import "scss/abstract/variable";
+@import "scss/component/header";
+@import "scss/component/footer";
+
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(/font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-Semibold;
+    src: url(/font/Poppins-SemiBold.ttf);
+}
