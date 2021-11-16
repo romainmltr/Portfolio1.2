@@ -1,0 +1,101 @@
+.fond{
+    height: 750px;
+    width: 100%;
+    background-image: url("../../image/pexels-pixabay-270348.jpg");
+    background-size: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titre_page{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    @include xl{ 
+        font-size:50px;
+        align-items: center;
+        margin-left: 50px;
+        
+    }
+}
+
+.card-1{
+    @include card_competence;
+    }
+    .card-1 p { 
+        margin-left: 5px;
+        margin-right: 5px;
+        @include xl{ 
+            font-size:200%;
+        }
+    }
+
+
+
+.card-2{
+    @include card_competence;
+    }
+    .card-2 p { 
+        margin-left: 5px;
+        margin-right: 5px;
+        @include xl{ 
+            font-size:200%;
+        }
+    }
+
+.card-3{
+    @include card_competence;
+    }
+    .card-3 p { 
+        margin-left: 5px;
+        margin-right: 5px;
+        @include xl{ 
+            font-size:200%;
+        }
+    }
+
+
+
+.global-card{
+    @include xl{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+    
+
+
+/* border-color: rgba(21, 25, 54, 0.555);                       A Save 
+
+  background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+     */
+
+
+
+
+
+

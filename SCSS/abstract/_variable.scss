@@ -1,0 +1,19 @@
+$breakpoints: (
+        mobile:  640px,
+        tablet: 768px, 
+        desktop: 1024px) ;
+
+
+$presentation:rgb(184, 187, 37);
+$container:red;
+$array:purple;
+$background:yellow;
+$title_1:mixin-exists($name: bg_center);
+$partie1:red;
+
+@font-face {
+        font-family: KumbhSans-Regular;
+        src: url(KumbhSans-Regular.ttf);
+};
+
+
