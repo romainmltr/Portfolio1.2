@@ -29,8 +29,9 @@ nav{
 
 
 section.present{
+    margin-top: 5%;
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 10%;
 
     color: white;
  
@@ -50,7 +51,37 @@ section.present{
     .present-texte{
         margin-left: 10%;
     }
-  }
+
+    .present-texte p {
+        font-size: 2rem;
+    }
+
+    .present-texte h1 {
+        font-size: 2rem;
+    }
+
+    .present-texte h2 {
+        font-size: 2rem;
+    }
+
+    .present-texte h3 {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    .img-logo{
+        a {
+            margin-left: 5%;  
+        }
+        a img {
+            position: relative;
+            left: 55%;
+            width: 10%;
+            bottom: 66%   ;            
+        }
+    }
+}
+
 
 
 
