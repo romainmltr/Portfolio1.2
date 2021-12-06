@@ -12,6 +12,12 @@ body {
   background-color: black;
 }
 
+nav {
+  padding-top: 2%;
+}
+nav .menu {
+  width: 0 auto;
+}
 nav .menu ul {
   list-style: none;
   display: flex;
@@ -223,6 +229,90 @@ section.present .img-logo a img {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
      */
+section.competence {
+  margin-top: 5%;
+}
+section.competence .grille {
+  max-width: 1300px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  margin: 10% auto;
+  grid-gap: 10%;
+  justify-content: center;
+}
+section.competence .grille img {
+  width: 45%;
+}
+section.competence .grille .wordpress {
+  width: 85%;
+}
+section.competence .grille .ui-ux {
+  width: 65%;
+}
+section.competence h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+section.competence p {
+  color: white;
+}
+
+section.projet {
+  color: white;
+  margin-bottom: 15%;
+}
+section.projet h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+section.projet .text-projet {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+section.projet img {
+  width: 50%;
+  margin-right: 5%;
+}
+section.projet p {
+  margin-left: 5%;
+  font-size: 2rem;
+}
+section.projet a {
+  box-shadow: inset 1px 39px 0px -21px #e67a73;
+  background-color: #e4685d;
+  border-radius: 9px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 12px 17px;
+  text-decoration: none;
+  left: 60%;
+  position: absolute;
+}
+section.projet a:hover {
+  background-color: #eb675e;
+}
+section.projet a:active {
+  position: relative;
+  top: 1px;
+}
+
+section .competence {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+section .competence img {
+  width: 50%;
+}
+
 @font-face {
   font-family: "KumbhSans";
   src: url("/font/KumbhSans-Regular.ttf");

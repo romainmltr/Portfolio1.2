@@ -10,13 +10,14 @@ body  {
 
 
 nav{
+    padding-top: 2%;
 .menu{
 
-
+    width: 0 auto;
     ul{
         list-style: none;
         display: flex;
-        justify-content: space-around
+        justify-content: space-around;
     }
 
     li{
