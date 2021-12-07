@@ -7,41 +7,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
   background-color: #0e1111;
 }
 
+header {
+  background-color: transparent;
+}
+
 nav {
-  width: 339px;
-  padding: 5% auto;
-  display: flex;
+  z-index: auto;
   position: fixed;
+  background: none;
 }
-
 nav ul {
-  display: flex;
+  list-style-type: none;
 }
-
-nav a {
-  display: flex;
-  width: 50px;
+nav ul li {
+  margin-bottom: 5%;
+}
+nav ul li a {
+  --fill-color: #198CE6;
+  padding: 4px 0;
+  font: 700 2rem Raleway, sans-serif;
   text-decoration: none;
-}
-
-nav, scroll-container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-scroll-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 5em;
+  -webkit-text-stroke: 2px var(--fill-color);
+  color: transparent;
+  transition: 0.5s linear;
 }
 
 section.present {
@@ -51,7 +42,8 @@ section.present {
   color: white;
 }
 section.present h1 {
-  font-size: 1rem;
+  font-size: 3rem;
+  text-align: center;
 }
 section.present .img-text {
   display: flex;
@@ -269,7 +261,7 @@ section.competence .grille .ui-ux {
   width: 65%;
 }
 section.competence h1 {
-  font-size: 1rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -284,7 +276,7 @@ section.projet-1 {
 }
 section.projet-1 h1 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 section.projet-1 .text-projet {
