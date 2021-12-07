@@ -3,30 +3,45 @@
   src: url(KumbhSans-Regular.ttf);
 }
 * {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: black;
+  background-color: #0e1111;
 }
 
 nav {
-  padding-top: 2%;
-}
-nav .menu {
-  width: 0 auto;
-}
-nav .menu ul {
-  list-style: none;
+  width: 339px;
+  padding: 5% auto;
   display: flex;
-  justify-content: space-around;
-}
-nav .menu li {
-  font-size: 40px;
-  color: white;
   position: fixed;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: flex;
+  width: 50px;
+  text-decoration: none;
+}
+
+nav, scroll-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
 }
 
 section.present {
@@ -34,6 +49,9 @@ section.present {
   margin-left: 15%;
   margin-right: 10%;
   color: white;
+}
+section.present h1 {
+  font-size: 1rem;
 }
 section.present .img-text {
   display: flex;
@@ -251,7 +269,7 @@ section.competence .grille .ui-ux {
   width: 65%;
 }
 section.competence h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -266,7 +284,7 @@ section.projet-1 {
 }
 section.projet-1 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 section.projet-1 .text-projet {
@@ -311,7 +329,7 @@ section.projet-2 {
 }
 section.projet-2 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5px;
   font-weight: bold;
 }
 section.projet-2 .text-projet-2 {
@@ -395,6 +413,15 @@ section .competence {
 }
 section .competence img {
   width: 50%;
+}
+
+footer {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  padding: 2%;
+  text-align: center;
+  margin-top: 3%;
 }
 
 @font-face {
