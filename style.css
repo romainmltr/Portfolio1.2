@@ -260,32 +260,32 @@ section.competence p {
   color: white;
 }
 
-section.projet {
+section.projet-1 {
   color: white;
   margin-bottom: 15%;
 }
-section.projet h1 {
+section.projet-1 h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
 }
-section.projet .text-projet {
+section.projet-1 .text-projet {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
 }
-section.projet img {
+section.projet-1 img {
   width: 50%;
   margin-right: 5%;
 }
-section.projet p {
+section.projet-1 p {
   margin-left: 5%;
   font-size: 2rem;
 }
-section.projet a {
-  box-shadow: inset 1px 39px 0px -21px #e67a73;
-  background-color: #e4685d;
+section.projet-1 a {
+  background: #aa0000;
+  background: linear-gradient(214deg, #aa0000 11%, #e32636 57%);
   border-radius: 9px;
   display: inline-block;
   cursor: pointer;
@@ -296,12 +296,96 @@ section.projet a {
   left: 60%;
   position: absolute;
 }
-section.projet a:hover {
-  background-color: #eb675e;
+section.projet-1 a:hover {
+  background: #ef0107;
+  background: linear-gradient(214deg, #ef0107 11%, #660000 57%);
 }
-section.projet a:active {
+section.projet-1 a:active {
   position: relative;
   top: 1px;
+}
+
+section.projet-2 {
+  color: white;
+  margin-bottom: 15%;
+}
+section.projet-2 h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+section.projet-2 .text-projet-2 {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+section.projet-2 img {
+  width: 50%;
+  margin-left: 5%;
+}
+section.projet-2 p {
+  margin-right: 5%;
+  font-size: 2rem;
+}
+section.projet-2 a {
+  background: #aa0000;
+  background: linear-gradient(214deg, #aa0000 11%, #e32636 57%);
+  border-radius: 9px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 12px 17px;
+  text-decoration: none;
+  right: 60%;
+  position: absolute;
+}
+section.projet-2 a:hover {
+  background: #ef0107;
+  background: linear-gradient(214deg, #ef0107 11%, #660000 57%);
+}
+section.projet-2 a:active {
+  position: relative;
+  top: 1px;
+}
+
+section.photo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.photo a {
+  background: #3347f8;
+  background: linear-gradient(214deg, #1d07e0 11%, #4226e3 57%);
+  border-radius: 9px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 12px 17px;
+  text-decoration: none;
+  margin-top: 2%;
+}
+section.photo a:hover {
+  background: #017cef;
+  background: linear-gradient(214deg, #085ab8 11%, #1d4ccf 57%);
+}
+section.photo img {
+  width: 40%;
+  height: 20%;
+}
+section.photo h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+section.photo p {
+  margin-bottom: 2%;
+  font-size: 24px;
+}
+section.photo p span {
+  font-style: oblique;
 }
 
 section .competence {
