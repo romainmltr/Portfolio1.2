@@ -6,13 +6,35 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #0e1111;
-}
+body {
+    animation: animate-bg-color 35s ease infinite;
+  }
+  
+  @keyframes animate-bg-color {
+    0% {
+      background-color: hsl(0, 0%, 0%);
+    }
+  
+    25% {
+      background-color: hsl(294, 49%, 12%);
+    }
+  
+    50% {
+     background-color: hsl(293, 64%, 20%);
+    }
+    75% {
+        background-color: hsl(293, 93%, 16%);
+    }
+  
+    100% {
+      background-color: hsl(0, 0%, 0%);
+    }
+  }
+  
 
 
 nav {
-    margin-left: 3%;
+    margin-left: 1%;
     position: fixed;  
     ul {
         list-style-type: none;
@@ -35,6 +57,11 @@ nav {
   
 
 section.present{
+    
+    @include xl {
+        display: flex;
+        flex-direction: column;        
+    }
     h1{
         font-size: 3rem;
         text-align: center;
@@ -46,6 +73,7 @@ section.present{
     color: white;
  
     .img-text{
+    
     display: flex;
     margin-top: 5%;
     align-items: center;
@@ -67,6 +95,7 @@ section.present{
     }
 
     .present-texte h1 {
+        font-family: "poppins-regular";
         font-size: 2rem;
     }
 
