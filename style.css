@@ -82,12 +82,7 @@ section.present .img-text {
 }
 section.present .img img {
   border-radius: 10px;
-  width: 500px;
-}
-@media screen and (max-width: 1200px) {
-  section.present .img img {
-    width: 300px;
-  }
+  width: 300px;
 }
 section.present .present-texte {
   margin-left: 10%;
@@ -129,6 +124,12 @@ section.present .img-logo a img {
   left: 55%;
   width: 10%;
   bottom: 66%;
+}
+@media screen and (max-width: 1200px) {
+  section.present .img-logo a img {
+    display: flex;
+    width: 50%;
+  }
 }
 
 .fond {

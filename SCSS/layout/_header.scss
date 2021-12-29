@@ -86,11 +86,7 @@ section.present{
     .img{
         img{
             border-radius: 10px;
-            width: 500px;
-            @include xl {
-                width: 300px;
-                
-    }
+            width: 300px;
         }
     }
 
@@ -138,7 +134,12 @@ section.present{
             position: relative;
             left: 55%;
             width: 10%;
-            bottom: 66%   ;            
+            bottom: 66%   ;  
+            @include xl {
+                display: flex;
+                width: 50%;
+                
+    }          
         }
     }
 }
