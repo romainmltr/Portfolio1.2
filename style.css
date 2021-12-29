@@ -55,27 +55,48 @@ section.present {
   margin-right: 10%;
   color: white;
 }
-@media screen and (max-width: 1200px) {
-  section.present {
-    display: flex;
-    flex-direction: column;
-  }
-}
 section.present h1 {
   font-size: 3rem;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  section.present h1 {
+    text-align: center;
+    display: none;
+  }
 }
 section.present .img-text {
   display: flex;
   margin-top: 5%;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  section.present .img-text {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.present {
+    width: 300px;
+  }
+}
 section.present .img img {
   border-radius: 10px;
   width: 500px;
 }
+@media screen and (max-width: 1200px) {
+  section.present .img img {
+    width: 300px;
+  }
+}
 section.present .present-texte {
   margin-left: 10%;
+  margin-right: 20%;
+}
+@media screen and (max-width: 1200px) {
+  section.present .present-texte {
+    margin-right: 55%;
+  }
 }
 section.present .present-texte p {
   font-size: 2rem;
@@ -93,6 +114,15 @@ section.present .present-texte h3 {
 }
 section.present .img-logo a {
   margin-left: 5%;
+}
+@media screen and (max-width: 1200px) {
+  section.present .img-logo a {
+    display: block;
+    margin-top: 5%;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 section.present .img-logo a img {
   position: relative;
@@ -301,6 +331,11 @@ section.projet-1 {
   padding: 1%;
   margin: 13%;
 }
+@media screen and (max-width: 1200px) {
+  section.projet-1 {
+    padding: 5% auto;
+  }
+}
 section.projet-1 .text-projet {
   display: grid;
   color: white;
@@ -309,6 +344,11 @@ section.projet-1 .text-projet {
   grid-template-rows: 240px 50px 3em;
   column-gap: 5%;
   row-gap: 5%;
+}
+@media screen and (max-width: 1200px) {
+  section.projet-1 .text-projet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 section.projet-1 img {
   width: 100%;
@@ -415,6 +455,13 @@ section.projet-2 a:hover {
 }
 
 section.photo {
+  margin: 20%;
+  background: rgba(25, 140, 230, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   display: flex;
   flex-direction: column;
@@ -430,14 +477,15 @@ section.photo a {
   padding: 12px 17px;
   text-decoration: none;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 section.photo a:hover {
   background: #017cef;
   background: linear-gradient(214deg, #085ab8 11%, #1d4ccf 57%);
 }
 section.photo img {
-  width: 40%;
-  height: 20%;
+  width: 20%;
+  height: 10%;
 }
 section.photo h1 {
   font-size: 3rem;

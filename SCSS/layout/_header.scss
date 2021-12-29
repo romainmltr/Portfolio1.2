@@ -57,15 +57,13 @@ nav {
   
 
 section.present{
-    
-    @include xl {
-        display: flex;
-        flex-direction: column;        
-    }
     h1{
+        @include xl {
+            text-align: center;
+            display: none;
+       }
         font-size: 3rem;
-        text-align: center;
-        
+        text-align: center;        
     }
     margin-top: 5%;
     margin-left: 15%;
@@ -73,21 +71,38 @@ section.present{
     color: white;
  
     .img-text{
-    
+        @include xl {
+            display: flex;
+
+        }
     display: flex;
     margin-top: 5%;
     align-items: center;
     }
-
+@include xl {
+                width: 300px;
+                
+    }
     .img{
         img{
             border-radius: 10px;
             width: 500px;
+            @include xl {
+                width: 300px;
+                
+    }
         }
     }
 
     .present-texte{
+        @include xl {
+           margin-right: 55%;
+            
+}
         margin-left: 10%;
+        margin-right: 20%
+
+       
     }
 
     .present-texte p {
@@ -110,6 +125,13 @@ section.present{
 
     .img-logo{
         a {
+            @include xl {
+                display: block;
+                margin-top: 5%;
+                align-content: center;
+                align-items: center;
+                flex-direction: row;
+    }           
             margin-left: 5%;  
         }
         a img {
