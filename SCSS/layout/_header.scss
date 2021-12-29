@@ -93,12 +93,9 @@ section.present{
     .present-texte{
         @include xl {
            margin-right: 55%;
-            
 }
         margin-left: 10%;
         margin-right: 20%
-
-       
     }
 
     .present-texte p {
@@ -138,8 +135,13 @@ section.present{
             @include xl {
                 display: flex;
                 width: 50%;
-                
-    }          
+            }          
+        }
+
+        a{
+            @include xl {
+                margin-top:10%;
+            }    
         }
     }
 }

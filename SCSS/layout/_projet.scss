@@ -43,13 +43,17 @@ section.projet-1{
     padding: 1%;
     margin: 13%;
     @include xl {
-        padding: 5% auto;
+        padding-bottom: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 }
     .text-projet {
         @include xl {
-        grid-template-columns: 1fr 1fr 1fr ;
+            display: flex;
+            flex-direction: column;
         }
-
         display: grid;
         color: white;
         margin: 0 auto;
@@ -63,6 +67,7 @@ section.projet-1{
         margin-right: 5%;
         grid-column: 1 / 3;
         grid-row:1/3;
+
 
     }
     h1 {

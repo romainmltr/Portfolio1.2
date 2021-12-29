@@ -131,6 +131,11 @@ section.present .img-logo a img {
     width: 50%;
   }
 }
+@media screen and (max-width: 1200px) {
+  section.present .img-logo a {
+    margin-top: 10%;
+  }
+}
 
 .fond {
   height: 750px;
@@ -334,7 +339,10 @@ section.projet-1 {
 }
 @media screen and (max-width: 1200px) {
   section.projet-1 {
-    padding: 5% auto;
+    padding-bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 section.projet-1 .text-projet {
@@ -348,7 +356,8 @@ section.projet-1 .text-projet {
 }
 @media screen and (max-width: 1200px) {
   section.projet-1 .text-projet {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 section.projet-1 img {
