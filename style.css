@@ -52,6 +52,16 @@ body {
   }
 }
 
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
 nav {
   margin-left: 1%;
   position: fixed;
