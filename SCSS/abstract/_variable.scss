@@ -12,8 +12,8 @@ $title_1:mixin-exists($name: bg_center);
 $partie1:red;
 
 @font-face {
-        font-family: KumbhSans-Regular;
-        src: url('/font/KumbhSans-Regular.ttf');
+        font-family: Poppins-Medium;
+        src: url('/font/Poppins-Medium.ttf');
 };
 
 
@@ -23,8 +23,12 @@ $partie1:red;
 };
 
 @font-face {
-        font-family: poppins-semi-bold;
-        src: url('/font/Poppins-SemiBold.ttf');
+        font-family: Poppins-Light;
+        src: url('/font/Poppins-Light.ttf');
+};
+@font-face {
+        font-family: Volkhov;
+        src: url('/font/Volkhov-Bold.ttf');
 };
 
 

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: KumbhSans-Regular;
-  src: url("/font/KumbhSans-Regular.ttf");
+  font-family: Poppins-Medium;
+  src: url("/font/Poppins-Medium.ttf");
 }
 
 @font-face {
@@ -9,17 +9,25 @@
 }
 
 @font-face {
-  font-family: poppins-semi-bold;
-  src: url("/font/Poppins-SemiBold.ttf");
+  font-family: Poppins-Light;
+  src: url("/font/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: Volkhov;
+  src: url("/font/Volkhov-Bold.ttf");
 }
 
 * {
-  font-size: 8px;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 8px;
 }
 
 body {
@@ -34,7 +42,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .mobile-menu {
     display: block;
   }
@@ -45,7 +53,7 @@ nav {
   position: fixed;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   nav {
     display: none;
   }
@@ -57,9 +65,11 @@ nav ul {
 
 nav ul li {
   margin-bottom: 95%;
+  font-size: 10rem;
 }
 
 nav ul li a {
+  font-size: 20%;
   --fill-color: #198CE6;
   font: 2rem Raleway, sans-serif;
   text-decoration: none;
@@ -67,6 +77,10 @@ nav ul li a {
   color: transparent;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
+}
+
+nav ul li a h1 {
+  font-size: 10rem;
 }
 
 section.present {
@@ -78,9 +92,11 @@ section.present {
 
 section.present h1 {
   text-align: center;
+  font-size: 6rem;
+  font-family: Volkhov;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present h1 {
     text-align: center;
     display: none;
@@ -97,7 +113,7 @@ section.present .img-text {
           align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present .img-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,7 +121,7 @@ section.present .img-text {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present {
     width: 300px;
   }
@@ -117,21 +133,54 @@ section.present .img img {
 }
 
 section.present .present-texte {
+  padding: 2%;
+  background: rgba(25, 140, 230, 0.4);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-left: 10%;
-  margin-right: 20%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present .present-texte {
-    margin-right: 55%;
+    margin-left: 3%;
+    font-size: 10rem;
+  }
+}
+
+section.present .present-texte p {
+  font-family: Poppins-Light;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  section.present .present-texte p {
+    font-size: 5rem;
   }
 }
 
 section.present .present-texte h1 {
-  font-family: "poppins-regular";
+  font-family: Poppins-Light;
+  font-size: 4rem;
+}
+
+section.present .present-texte h2 {
+  font-family: Poppins-Light;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  section.present .present-texte h2 {
+    font-size: 5rem;
+  }
 }
 
 section.present .present-texte h3 {
+  font-family: Poppins-Light;
+  font-size: 3rem;
   margin-top: 5%;
 }
 
@@ -145,7 +194,7 @@ section.present .img-logo a {
   margin-left: 5%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present .img-logo a {
     display: block;
     margin-top: 5%;
@@ -166,7 +215,7 @@ section.present .img-logo a img {
   bottom: 66%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present .img-logo a img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175,7 +224,7 @@ section.present .img-logo a img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.present .img-logo a {
     margin-top: 10%;
   }
@@ -214,7 +263,7 @@ section.present .img-logo a img {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .titre_page {
     font-size: 50px;
     -webkit-box-align: center;
@@ -266,7 +315,7 @@ section.present .img-logo a img {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .card-1 p {
     font-size: 200%;
   }
@@ -314,7 +363,7 @@ section.present .img-logo a img {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .card-2 p {
     font-size: 200%;
   }
@@ -362,7 +411,7 @@ section.present .img-logo a img {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .card-3 p {
     font-size: 200%;
   }
@@ -386,7 +435,7 @@ section.present .img-logo a img {
           justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .global-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -431,7 +480,7 @@ section.competence .grille img {
 }
 
 section.competence .grille .wordpress {
-  width: 85%;
+  width: 45%;
 }
 
 section.competence .grille .ui-ux {
@@ -439,8 +488,9 @@ section.competence .grille .ui-ux {
 }
 
 section.competence h1 {
+  font-family: Volkhov;
+  font-size: 6rem;
   text-align: center;
-  font-weight: bold;
   color: white;
 }
 
@@ -460,7 +510,7 @@ section.projet-1 {
   margin: 13%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 {
     padding-bottom: 10%;
     display: -webkit-box;
@@ -490,7 +540,7 @@ section.projet-1 .text-projet {
   row-gap: 5%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 .text-projet {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,13 +570,15 @@ section.projet-1 h1 {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 h1 {
     margin-bottom: 5%;
   }
 }
 
 section.projet-1 h2 {
+  font-size: 3rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
@@ -534,13 +586,15 @@ section.projet-1 h2 {
   grid-row: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 h2 {
     margin-bottom: 5%;
   }
 }
 
 section.projet-1 p {
+  font-size: 2rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
@@ -549,7 +603,7 @@ section.projet-1 p {
   grid-row: 1 /2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 p {
     margin-bottom: 5%;
     margin-top: 5%;
@@ -557,21 +611,25 @@ section.projet-1 p {
 }
 
 section.projet-1 h3 {
+  font-size: 3rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / 5;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 h3 {
     margin-bottom: 5%;
   }
 }
 
 section.projet-1 a {
+  font-size: 2rem;
+  font-family: poppins-semi-bold;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
@@ -589,7 +647,7 @@ section.projet-1 a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-1 a {
     margin-bottom: 5%;
   }
@@ -612,7 +670,7 @@ section.projet-2 {
   margin: 13%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 {
     padding-bottom: 10%;
     display: -webkit-box;
@@ -642,7 +700,7 @@ section.projet-2 .text-projet-2 {
   row-gap: 5%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 .text-projet-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -665,6 +723,8 @@ section.projet-2 img {
 }
 
 section.projet-2 h2 {
+  font-size: 3rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -672,13 +732,15 @@ section.projet-2 h2 {
   grid-row: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 h2 {
     margin-bottom: 5%;
   }
 }
 
 section.projet-2 p {
+  font-size: 2rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/ 2;
@@ -687,7 +749,7 @@ section.projet-2 p {
   grid-row: 1/3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 p {
     margin-bottom: 5%;
     margin-top: 5%;
@@ -695,12 +757,8 @@ section.projet-2 p {
 }
 
 section.projet-2 h3 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3 / 5;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  font-size: 3rem;
+  font-family: Poppins-Medium;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -709,13 +767,15 @@ section.projet-2 h3 {
   grid-row: 2/3;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 h3 {
     margin-bottom: 5%;
   }
 }
 
 section.projet-2 a {
+  font-size: 2rem;
+  font-family: poppins-semi-bold;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -732,7 +792,7 @@ section.projet-2 a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   section.projet-2 a {
     margin-bottom: 5%;
   }
@@ -744,6 +804,7 @@ section.projet-2 a:hover {
 }
 
 section.photo {
+  padding: 3%;
   margin: 20%;
   background: rgba(25, 140, 230, 0.4);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -771,6 +832,8 @@ section.photo a {
   border-radius: 9px;
   cursor: pointer;
   color: #ffffff;
+  font-size: 2rem;
+  font-family: poppins-semi-bold;
   padding: 12px 17px;
   text-decoration: none;
   margin-top: 2%;
@@ -788,11 +851,14 @@ section.photo img {
 }
 
 section.photo h1 {
-  font-weight: bold;
+  font-size: 3rem;
+  font-family: Poppins-Medium;
   margin-bottom: 2%;
 }
 
 section.photo p {
+  font-size: 3rem;
+  font-family: Poppins-Light;
   margin-bottom: 2%;
   text-align: center;
 }
