@@ -751,6 +751,7 @@ section.projet-2 p {
 
 @media screen and (max-width: 1000px) {
   section.projet-2 p {
+    font-size: 6rem;
     margin-bottom: 5%;
     margin-top: 5%;
   }
@@ -867,24 +868,12 @@ section.photo p span {
   font-style: oblique;
 }
 
-section .competence {
-  display: -ms-grid;
-  display: grid;
-  grid-column-gap: 20px;
-  grid-row-gap: 50px;
-}
-
-section .competence img {
-  width: 50%;
-}
-
 footer {
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: white;
-  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.747);
   text-align: center;
-  margin-top: 3%;
+  font-size: 2rem;
+  padding: 1%;
+  font-family: Poppins-Medium;
 }
 
 @font-face {
