@@ -1,0 +1,22 @@
+.nav-links{
+    width:100%;
+    display:flex;
+    justify-content: center;
+        .nav-button{
+           font-size: 2rem;
+           background: $color-blue-metal;
+           padding: 1.5rem 5rem;
+           border-radius: 4rem;
+           color: $color_light_white;
+           font-family: "Urbanist-Regular";
+           text-transform: uppercase;
+           text-decoration: none;
+           border: 2px solid $color-blue-metal;
+           transition: .3s;
+           &:hover{
+               background-color:transparent;
+               color: $color-blue-metal;
+               
+           }
+        }
+    }
