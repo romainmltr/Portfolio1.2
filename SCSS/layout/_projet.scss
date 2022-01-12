@@ -9,7 +9,7 @@ section.competence {
     grid-gap: 10%;
     justify-content: center;
     img{
-        width: 45%;
+        width: 20rem;
     }
 
     .wordpress{
@@ -33,14 +33,11 @@ section.competence {
 
 
 section.projet-1{
-    
-    background: rgba( 25, 140, 230, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 1%;
+    border-radius: 2rem;
+    background: linear-gradient(19deg, #474affb9 0%, #bc48ff8f 100%);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(19px);
+    padding: 2%;
     margin: 13%;
     @include xl {
         
@@ -111,31 +108,29 @@ section.projet-1{
         grid-column:  3 / 4;
         grid-row:  2/3;
     }
-
-    a{
-        font-size: 2rem;
-        font-family: poppins-semi-bold;
-        @include xl {
-            margin-bottom:5%; 
-          }
-        grid-column:  4 / 5;
-        grid-row: 2/3 ;
-        text-align: center;
-        background: rgb(170,0,0);
-        background: linear-gradient(214deg, rgba(170,0,0,1) 11%, rgba(227,38,54,1) 57%);
-        border-radius:9px;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-
-        padding: 5%;
-        text-decoration:none;
-    }
-    a:hover {
-        background: rgb(239,1,7);
-        background: linear-gradient(214deg, rgba(239,1,7,1) 11%, rgba(102,0,0,1) 57%);
-    }
-   
+    .nav-links{
+        width:100%;
+        display:flex;
+        justify-content: center;
+            .nav-button{
+               font-size: 2rem;
+               background: blue;
+               padding: 1.5rem 5rem;
+               border-radius: 4rem;
+               color: lightblue;
+               font-family: "Urbanist-Regular";
+               text-transform: uppercase;
+               text-decoration: none;
+               border: 2px solid blue;
+               transition: .3s;
+               font-family: Poppins-Medium;
+               &:hover{
+                   background-color:transparent;
+                   color: blue;
+                   
+               }
+            }
+        }
  
 }
 
@@ -148,14 +143,13 @@ section.projet-2{
         align-items: center;
         
 }
-    background: rgba( 25, 140, 230, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding: 1%;
-    margin: 13%;
+border-radius: 2rem;
+background: linear-gradient(1deg, #474affb9 30%, #bc48ff8f 70%);
+-webkit-backdrop-filter: blur(9px);
+backdrop-filter: blur(19px);
+    padding: 3%;
+    margin: 18%;
+
     .text-projet-2 {
 
         @include xl {
@@ -211,33 +205,32 @@ section.projet-2{
         grid-column:  2 / 3;
         grid-row:  2/3;
     }
+    
+    .nav-links{
+        width:100%;
+        display:flex;
+        justify-content: center;
+            .nav-button{
+               font-size: 2rem;
+               background: blue;
+               padding: 1.5rem 5rem;
+               border-radius: 4rem;
+               color: lightblue;
+               font-family: "Urbanist-Regular";
+               text-transform: uppercase;
+               text-decoration: none;
+               border: 2px solid blue;
+               transition: .3s;
+               font-family: Poppins-Medium;
+               &:hover{
+                   background-color:transparent;
+                   color: blue;
+                   
+               }
+            }
+        }
 
-    a{
-        font-size: 2rem;
-        font-family: poppins-semi-bold;
-
-        @include xl {
-            margin-bottom:5%; 
-          }
-        grid-column:  2/3 ;
-        grid-row: 3 ;
-        text-align: center;
-        background: rgb(170,0,0);
-        background: linear-gradient(214deg, rgba(170,0,0,1) 11%, rgba(227,38,54,1) 57%);
-        border-radius:9px;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-      
-        padding: 2%;
-        text-decoration:none;
-    }
-    a:hover {
-        background: rgb(239,1,7);
-        background: linear-gradient(214deg, rgba(239,1,7,1) 11%, rgba(102,0,0,1) 57%);
-    }
-   
- 
+  
 }
 
 
@@ -245,12 +238,10 @@ section.projet-2{
 section.photo{
     padding: 3%;
     margin: 20%;
-    background: rgba( 25, 140, 230, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 2rem;
+    background: linear-gradient(19deg,#bc48ff8f 0% ,#474affb9 100% );
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(19px);
     color: white;
     display: flex;
     flex-direction: column;
@@ -297,3 +288,105 @@ section.photo{
 
 
 
+section.projet-3{
+    
+    background: linear-gradient(19deg, #bc48ff8f 25%,#474affb9 75%);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(19px);
+    border-radius: 2rem;
+    padding: 2%;
+    margin: 13%;
+    @include xl {
+        
+        padding-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+}
+    .text-projet-3 {
+        @include xl {
+            display: flex;
+            flex-direction: column;
+        }
+        display: grid;
+        color: white;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 240px 50px 3em ;
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+    img{
+        width: 100%;
+        margin-right: 5%;
+        grid-column: 1 / 3;
+        grid-row:1/3;
+    }
+    h1 {
+        @include xl {
+            margin-bottom:5%; 
+        }
+        margin-bottom: 3%;   margin-bottom: 3%;      
+        text-align: center;
+        color: white;
+    
+    }
+    h2{
+        font-size: 3rem;
+        font-family: Poppins-Medium; 
+        grid-column:  4 / 5;
+        grid-row:  1 ;
+        @include xl {
+            margin-bottom:5%; 
+        }
+        
+    }
+
+    p{
+        font-size: 2rem;
+        font-family: Poppins-Medium;
+        @include xl {
+            
+            margin-bottom:5%; 
+            margin-top:5%; 
+        }
+        grid-column:  3 / 4;
+        grid-row:  1 /2;
+    }
+
+    h3{
+        font-size: 3rem;
+        font-family: Poppins-Medium;
+        @include xl {
+            margin-bottom:5%; 
+            
+        }
+        grid-column:  3 / 4;
+        grid-row:  2/3;
+    }
+    .nav-links{
+        width:100%;
+        display:flex;
+        justify-content: center;
+            .nav-button{
+               font-size: 2rem;
+               background: blue;
+               padding: 1.5rem 5rem;
+               border-radius: 4rem;
+               color: lightblue;
+               font-family: "Urbanist-Regular";
+               text-transform: uppercase;
+               text-decoration: none;
+               border: 2px solid blue;
+               transition: .3s;
+               font-family: Poppins-Medium;
+               &:hover{
+                   background-color:transparent;
+                   color: blue;
+                   
+               }
+            }
+        }
+ 
+}
