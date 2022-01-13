@@ -16,9 +16,9 @@
 
     <nav class ="navbar">
         <ul>
-            <li><a href="#page-1">Accueil</a></li>
             <li><a href="#page-3">Projets</a></li>
             <li><a href="#page-2">Competences</a></li>
+            <li><a href="contact.php">contact</a></li>
         </ul>
       </nav>
 </header>
@@ -30,7 +30,7 @@
     <h1><scroll-page id="page-1"></scroll-page></h1>
     <div class ="img-text">
         <div class ="img">
-            <img src="/image/Romain Malaterre Black White.PNG">
+            <img src="image/Romain Malaterre Black White.PNG">
         </div>
                 <div class ="present-texte">
 
@@ -72,15 +72,15 @@
     <h1><scroll-page id="page-2"></scroll-page></h1>
       
     <div class ="grille">
-        <img class ="adobe" src="/image/audit.png">
-        <img class ="adobe" src="/image/Adobe_XD_CC_icon.svg.png">
-        <img class ="adobe" src="/image/php_horizontal_logo_icon_170852.png">
-        <img class ="adobe" src="/image/—Pngtree—vector seo icon_3788513.png">
-        <img class ="js" src="/image/javascript.png">
-        <img class ="python" src="/image/python.png">
-        <img  class ="tailwind"src="/image/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64352f5461696c77696e645f4353535f4c6f676f2e7376672f3230343870782d5461696c77696e645f4353535f4c6f.png">
-        <img class ="wordpress" src="/image/pngegg.png">
-        <img class ="ui-ux"src="/image/logo.png">
+        <img class ="adobe" src="image/audit.png">
+        <img class ="adobe" src="image/Adobe_XD_CC_icon.svg.png">
+        <img class ="adobe" src="image/php_horizontal_logo_icon_170852.png">
+        <img class ="adobe" src="image/—Pngtree—vector seo icon_3788513.png">
+        <img class ="js" src="image/javascript.png">
+        <img class ="python" src="image/python.png">
+        <img  class ="tailwind"src="image/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f642f64352f5461696c77696e645f4353535f4c6f676f2e7376672f3230343870782d5461696c77696e645f4353535f4c6f.png">
+        <img class ="wordpress" src="image/pngegg.png">
+        <img class ="ui-ux" src="image/logo.png">
     
     </div>
     </section>
@@ -123,7 +123,7 @@
 </section>
 <section class ="projet-3">
     <div class ="text-projet-3">
-    <img src="/image/api-pokemon.png">
+    <img src="image/api-pokemon.png">
     <p>Ce site est un rendu d'un projet en JavaScript on à travaillé sur comment traité une API récupérer ces informations
         afin de pouvoir s'en servir . Dans cette exemple nous avons récupéré l'API Pokemon.
     </p>
@@ -140,7 +140,7 @@
 <section class ="photo">
 <h1>Passioné de photographie</h1>
 <p>Voicis mon site ou je publie régulièrement mes photo un site fait <br> par ma main est en developpement avec <span>Tailwind</span> </p>
-<img src="/image/scrnli_07_12_2021_12-46-04.png">
+<img src="image/scrnli_07_12_2021_12-46-04.png">
 <a href="https://romainmalaterre.myportfolio.com/">Mon site Photo </a>
 </section>
 
