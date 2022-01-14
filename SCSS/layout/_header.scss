@@ -22,8 +22,6 @@ background-size: cover;*/
 
 
 header{
-    
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -32,7 +30,6 @@ header{
     transition: 0,5s;
 }
 header.scroll{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,35 +38,32 @@ header.scroll{
     transition: 0,5s;
 }
 nav{
-    position: absolute;
-    left: 30%;
     
     width: 60%;
     @include xl {
         display: none;
     }
     ul { 
+    margin-top: 2%;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+        
+        li{
+            cursor: pointer;
+        }
+
             a{
+                cursor: pointer;
                 font-family: Volkhov;
-                --fill-color: #198CE6;
                 font-size: 6rem;
                 text-decoration: none;
                 -webkit-text-stroke: 2px var(--fill-color);
-                color: transparent; 
+                color: #198CE6;; 
             }
    
     }
-    nav ul li a::after{
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        background-color: green ;
-        transition: width 0.3s;
-    }
+
 
   
 }
@@ -189,6 +183,18 @@ section.present{
     }
 }
 
+#triangle-up {
+        position: relative;
+        left: 92%;
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid;
+        backdrop-filter: blur(6.9px);
+        background-color: rgba(136, 136, 136, 0.062);
+
+      }
 
 
 

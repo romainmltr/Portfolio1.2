@@ -11,8 +11,9 @@
 </head>
 <body>
     <div id="bg"></div>
-
+    <a id="haut"></a>
 <header>
+    
 
     <nav class ="navbar">
         <ul>
@@ -96,7 +97,7 @@
             <h2>Du 01/11/2021 au 06/11/2021  <i class="fas fa-calendar-week"></i></h2>
             <h3>Projet Ecole </h3>
             <div class="nav-links">
-                <a href="#" class="nav-button" href="https://exercice-ftp.vercel.app/">Site</a>
+                <a  class="nav-button" href="https://exercice-ftp.vercel.app/">Site</a>
             </div>
             
     </div>
@@ -113,7 +114,7 @@
     <h2>Du 01/11/2021 au 06/11/2021  <i class="fas fa-calendar-week"></i></h2>
     <h3>Projet Ecole  </h3>
     <div class="nav-links">
-        <a href="#" class="nav-button" href="https://exercice-ftp.vercel.app/">Site</a>
+        <a class="nav-button" href="https://exercice-ftp.vercel.app/">Site</a>
     </div>
     </div>
   
@@ -130,25 +131,15 @@
     <h2>Du 01/11/2021 au 06/11/2021  <i class="fas fa-calendar-week"></i></h2>
     <h3>Projet Ecole  </h3>
     <div class="nav-links">
-        <a href="#" class="nav-button" href="https://java-script-api.vercel.app">Site</a>
+        <a class="nav-button" href="https://java-script-api.vercel.app">Site</a>
     </div>
     </div>
-   
-   
 </section>
 
-<section class ="photo">
-<h1>Passioné de photographie</h1>
-<p>Voicis mon site ou je publie régulièrement mes photo un site fait <br> par ma main est en developpement avec <span>Tailwind</span> </p>
-<img src="image/scrnli_07_12_2021_12-46-04.png">
-<a href="https://romainmalaterre.myportfolio.com/">Mon site Photo </a>
-</section>
-
+<a id="triangle-up" href="#haut"></a>
 
 <footer>
-    
 <p>Portfolio de Malaterre Romain 2021 A2 IIM DW</p>
-
 </footer>
 <script src="/script/script.js"></script>
 </body>

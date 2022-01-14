@@ -37,7 +37,6 @@ body {
 }
 
 header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -47,7 +46,6 @@ header {
 }
 
 header.scroll {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -57,8 +55,6 @@ header.scroll {
 }
 
 nav {
-  position: absolute;
-  left: 30%;
   width: 60%;
 }
 @media screen and (max-width: 1000px) {
@@ -67,25 +63,21 @@ nav {
   }
 }
 nav ul {
+  margin-top: 2%;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
 }
+nav ul li {
+  cursor: pointer;
+}
 nav ul a {
+  cursor: pointer;
   font-family: Volkhov;
-  --fill-color: #198CE6;
   font-size: 6rem;
   text-decoration: none;
   -webkit-text-stroke: 2px var(--fill-color);
-  color: transparent;
-}
-nav nav ul li a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 1px;
-  background-color: green;
-  transition: width 0.3s;
+  color: #198CE6;
 }
 
 section.present {
@@ -196,6 +188,18 @@ section.present .img-logo a img {
   }
 }
 
+#triangle-up {
+  position: relative;
+  left: 92%;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid;
+  backdrop-filter: blur(6.9px);
+  background-color: rgba(136, 136, 136, 0.062);
+}
+
 .container {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -206,6 +210,11 @@ section.present .img-logo a img {
 #formulaire {
   display: flex;
   flex-direction: column;
+}
+#formulaire:hover {
+  transition: 0, 3s;
+  background: linear-gradient(9deg, #474aff57 20%, #bc48ff41 80%);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -225,7 +234,6 @@ form {
 form p {
   font-size: 5rem;
   color: #fff;
-  opacity: 0.7;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -239,6 +247,24 @@ form a:hover {
 }
 form a:active {
   text-shadow: none;
+}
+form textarea {
+  text-align: center;
+  background: transparent;
+  font-size: 4rem;
+  width: 100%;
+  height: 70%;
+  padding: 1%;
+  margin-bottom: 1rem;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 form input {
   text-align: center;
@@ -341,6 +367,12 @@ button:focus {
 
 .valider_contact {
   margin-top: 2rem;
+  background: rgba(138, 135, 135, 0.76);
+}
+
+.contact_texte {
+  padding: 3rem;
+  font-size: 2rem;
 }
 
 section.competence {
@@ -354,6 +386,7 @@ section.competence .grille {
   margin: 10% auto;
   grid-gap: 10%;
   justify-content: center;
+  align-content: center;
 }
 section.competence .grille img {
   width: 20rem;
@@ -463,20 +496,20 @@ section.projet-1 .nav-links {
 }
 section.projet-1 .nav-links .nav-button {
   font-size: 2rem;
-  background: blue;
+  background: #d4d4d4;
   padding: 1.5rem 5rem;
   border-radius: 4rem;
-  color: lightblue;
+  color: black;
   font-family: "Urbanist-Regular";
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid blue;
+  border: 2px solid black;
   transition: 0.3s;
   font-family: Poppins-Medium;
 }
 section.projet-1 .nav-links .nav-button:hover {
-  background-color: transparent;
-  color: blue;
+  background-color: #3034fde3;
+  color: black;
 }
 
 section.projet-2 {
@@ -557,68 +590,20 @@ section.projet-2 .nav-links {
 }
 section.projet-2 .nav-links .nav-button {
   font-size: 2rem;
-  background: blue;
+  background: #d4d4d4;
   padding: 1.5rem 5rem;
   border-radius: 4rem;
-  color: lightblue;
+  color: black;
   font-family: "Urbanist-Regular";
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid blue;
+  border: 2px solid black;
   transition: 0.3s;
   font-family: Poppins-Medium;
 }
 section.projet-2 .nav-links .nav-button:hover {
-  background-color: transparent;
-  color: blue;
-}
-
-section.photo {
-  padding: 3%;
-  margin: 20%;
-  border-radius: 2rem;
-  background: linear-gradient(19deg, #bc48ff8f 0%, #474affb9 100%);
-  -webkit-backdrop-filter: blur(9px);
-  backdrop-filter: blur(19px);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section.photo a {
-  background: #3347f8;
-  background: linear-gradient(214deg, #1d07e0 11%, #4226e3 57%);
-  border-radius: 9px;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 2rem;
-  font-family: poppins-semi-bold;
-  padding: 12px 17px;
-  text-decoration: none;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-section.photo a:hover {
-  background: #017cef;
-  background: linear-gradient(214deg, #085ab8 11%, #1d4ccf 57%);
-}
-section.photo img {
-  width: 20%;
-  height: 10%;
-}
-section.photo h1 {
-  font-size: 3rem;
-  font-family: Poppins-Medium;
-  margin-bottom: 2%;
-}
-section.photo p {
-  font-size: 3rem;
-  font-family: Poppins-Light;
-  margin-bottom: 2%;
-  text-align: center;
-}
-section.photo p span {
-  font-style: oblique;
+  background-color: #3034fde3;
+  color: black;
 }
 
 section.projet-3 {
@@ -627,7 +612,8 @@ section.projet-3 {
   backdrop-filter: blur(19px);
   border-radius: 2rem;
   padding: 2%;
-  margin: 13%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 @media screen and (max-width: 1000px) {
   section.projet-3 {
@@ -710,27 +696,29 @@ section.projet-3 .nav-links {
 }
 section.projet-3 .nav-links .nav-button {
   font-size: 2rem;
-  background: blue;
+  background: #d4d4d4;
   padding: 1.5rem 5rem;
   border-radius: 4rem;
-  color: lightblue;
+  color: black;
   font-family: "Urbanist-Regular";
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid blue;
+  border: 2px solid black;
   transition: 0.3s;
   font-family: Poppins-Medium;
 }
 section.projet-3 .nav-links .nav-button:hover {
-  background-color: transparent;
-  color: blue;
+  background-color: #3034fde3;
+  color: black;
 }
 
 footer {
   background-color: rgba(255, 255, 255, 0.747);
   text-align: center;
+  height: 5%;
   font-size: 2rem;
   padding: 1%;
+  margin-top: 6%;
   font-family: Poppins-Medium;
 }
 
